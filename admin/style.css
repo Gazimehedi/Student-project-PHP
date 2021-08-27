@@ -1,0 +1,240 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:   students management system
+Company Name: UnivaHost | ThemeAsia | Shipsoft
+Version:    2.0.7
+Last change:    26/09/20 [fixed Float bug, vf]
+Author Name: Gazi Mehedi Hasan
+Primary use:   php project
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+
+2.
+-------------------------------------------------------------------*/
+
+/*
+==========================================
+    Reset Css
+==========================================
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.content {
+    min-height: 500px;
+}
+
+footer {
+    margin-top: 180px;
+}
+
+#mainNav {
+    width: 100%;
+    background: #f1f1f1;
+    border-bottom: 2px solid orange;
+    display: table;
+
+}
+
+.displaySize {
+    width: 98%;
+    margin: auto;
+    position: relative;
+    display: block;
+}
+
+img {
+    width: 100%;
+}
+
+#logo {
+    width: 400px;
+    float: left;
+}
+
+#logo img {
+    margin-bottom: -31px;
+}
+
+#menuContener {
+    width: 900px;
+    float: right;
+}
+
+#paimary_menu {
+    list-style: none;
+    float: right;
+}
+
+#paimary_menu li {
+    float: left;
+    position: relative;
+}
+
+#paimary_menu li a {
+    font-size: 16px;
+    color: #222;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 15px;
+    display: block;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+#paimary_menu li a svg.fa-power-off,
+.fa-user,
+.fa-user-plus {
+    font-weight: 400;
+    padding: 0 1px;
+    margin: 0 3px;
+}
+
+#paimary_menu li a:hover {
+    background: #00374c;
+    color: #fff !important;
+    transition: all 1s;
+}
+
+#sub_menu {
+    list-style: none;
+    background: #259bca;
+    width: 270px;
+    position: absolute;
+    top: 63px;
+    transform: scaley(0);
+    transform-origin: top;
+    overflow: hidden;
+    border-top: 2px solid #000;
+    transition: all 0.4s;
+    z-index: 1;
+}
+
+#paimary_menu li:hover #sub_menu {
+    transform: scaley(1);
+}
+
+#sub_menu li {
+    float: none;
+}
+
+#sub_menu li a {
+    padding: 10px;
+    transition: all 0.7s;
+    font-size: 15px;
+}
+
+#sub_menu li a:hover {
+    padding-left: 50px;
+}
+
+.breadcrumb svg.fa-tachometer-alt {
+    font-size: 18px;
+    margin: 3px 1px;
+}
+
+.body {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 2em auto;
+    color: #888;
+    display: table;
+    font-family: sans-serif;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    min-height: 380px;
+}
+
+h1 {
+    color: #555;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+p {
+    margin: 0 auto;
+    width: 280px;
+}
+
+@media only screen and (max-width: 280px) {
+
+    body,
+    p {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin: 0 0 0.3em;
+    }
+
+}
+
+ol li svg.svg-inline--fa.fa-users.fa-w-20 {
+    font-size: 16px;
+    margin: 2px;
+}
+
+ol li svg.svg-inline--fa.fa-tachometer-alt.fa-w-18 {
+    font-size: 16px;
+    margin: 1px 0;
+}
+ol li svg.fa-pencil-alt.fa-w-16 {
+    font-size: 16px;
+    margin: 3px;
+}
+ol li svg..svg-inline--fa.fa-user.fa-w-14 {
+    font-size: 16px;
+    margin: 3px;
+}
+#img-btn {
+    opacity: 0;
+    position: absolute;
+    bottom: -141px;
+    right: 5px;
+}
+
+#profile:hover #img-btn {
+    opacity: 1;
+    transition: 1s ease;
+}
+
+#upload-form {
+    opacity: 0;
+}
+
+li.paginate_button.page-item.active .page-link {
+    background: #17a2b8;
+    border-color: #17a2b8;
+}
